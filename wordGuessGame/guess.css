@@ -1,0 +1,63 @@
+body {
+    margin-top: 0 auto;
+    background-image: url(guess-bg-06.jpeg);
+    background-size: cover;
+    color: rgb(22, 172, 164);
+}
+
+
+/* table {
+    margin-top: 1.5em;
+} */
+
+h1 {
+    padding-left: 1em;
+    padding-right: 1em;
+    color: orange;
+}
+
+hr {
+    background-color: white;
+    height: 1px;
+    width: 200px;
+    border: none;
+}
+
+.fa-smile-wink {
+    height: 50px;
+    width: 50px;
+    align-items: center;
+}
+
+button {
+    max-width: 600px;
+}
+
+#guessButton :hover {
+    cursor: pointer;
+}
+
+#pickButton :hover {
+    cursor: pointer;
+}
+
+h4 {
+    color: rgb(22, 172, 164);
+}
+
+#hintButton {
+    color: orange;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    transition: ease-in-out;
+}
+
+#hintButton:hover span {
+    display: none;
+}
+
+#hintButton:hover:before {
+    font-size: 30px;
+    color: orange;
+    content: "It's a mobile band name :)"
+}
