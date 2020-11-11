@@ -5,27 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word Guess Game</title>
+    <link rel="stylesheet" type="text/css" href="guess.css">
     <script src=guess.js></script>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
 
 <body>
     <table align="center">
         <tr align="center">
             <td>
-                <h1>GUESS A WORD !</h1>
+                <h1>GUESS A WORD !
+                    <hr>
+                </h1>
             </td>
-        </tr>
-        <tr align="center">
-            <td>This is a mobile brand name</td>
-        </tr>
-        <tr align="center">
-            <td></td>
         </tr>
         <tr align="center">
             <td>
                 <table>
                     <tr align="center">
                         <td>
+                            <h3> Ready Go !!</h3>
                             <h3 id="dashes">Click "Pick a word" now</h3>
                         </td>
                     </tr>
@@ -41,12 +41,21 @@
                         <td><button id="guessButton" disabled onclick=guessLetter()>
                             <h4>Let's Guess</h4>
                         </button>
-                            <button onclick=newGame()>
+                            <button id="pickButton" onclick=newGame()>
                             <h4>Pick a Word</h4>
                         </button>
                         </td>
                     </tr>
                 </table>
+            </td>
+        </tr>
+
+        <tr align="center">
+            <td class="hint">
+
+                <button id="hintButton">
+                    <span><i class="far fa-smile-wink"></i> Hint!</span>
+                </button>
             </td>
         </tr>
     </table>
